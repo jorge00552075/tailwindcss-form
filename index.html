@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <script type="module" defer src="./script.js"></script>
+  </head>
+  <body class="bg-RED bg-hero-pattern">
+    <main
+      class="grid grid-cols-1 lg:grid-cols-2 max-w-[327px] sm:max-w-[540px] lg:max-w-[1080px] my-16 lg:mt-32 mx-auto"
+    >
+      <div class="flex flex-col justify-center">
+        <div
+          class="mx-auto max-w-[327px] sm:max-w-[540px] lg:mx-0 text-center lg:text-left"
+        >
+          <h1
+            class="font-bold text-[28px] sm:text-[50px] text-white tracking-tight leading-tight"
+          >
+            Learn to code by watching others
+          </h1>
+          <p class="mt-6 mb-16 lg:mb-0 font-medium text-white">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="max-w-[327px] sm:max-w-[540px] mx-auto">
+          <a
+            href="#"
+            class="inline-block w-full mb-6 py-5 sm:py-[18px] rounded-lg bg-ACCENT shadow-lg text-white text-center cursor-pointer active:translate-y-px"
+          >
+            <span class="font-bold">Try it free 7 days</span>
+            <br class="sm:hidden" />
+            then $20/mo. thereafter
+          </a>
+        </div>
+        <!-- Wrapper -->
+        <div
+          class="max-w-[327px] sm:max-w-[540px] mx-auto py-8 md:py-10 rounded-xl bg-white shadow-xl"
+        >
+          <form id="form" class="mx-auto max-w-[460px] px-6 sm:px-0">
+            <div class="relative mb-6 text-right">
+              <img
+                hidden
+                class="absolute top-1/2 right-4 -translate-y-6"
+                src="./images/icon-error.svg"
+                alt="error icon"
+              />
+              <label for="firstname" hidden>First Name</label>
+              <input
+                id="firstname"
+                placeholder="First Name"
+                class="block w-full p-4 rounded-md border border-gray-300 outline-none focus-within:ring-2 ring-ACCENT"
+              />
+              <div hidden>
+                <small class="inline-block text-RED font-medium translate-y-1"
+                  >First name cannot be empty</small
+                >
+              </div>
+            </div>
+            <div class="relative mb-6 text-right">
+              <img
+                hidden
+                class="absolute top-1/2 right-4 -translate-y-6"
+                src="./images/icon-error.svg"
+                alt="error icon"
+              />
+              <label for="lastname" hidden>Last Name</label>
+              <input
+                id="lastname"
+                placeholder="Last Name"
+                class="block w-full p-4 rounded-md border border-gray-300 outline-none focus-within:ring-2 ring-ACCENT"
+              />
+              <div hidden>
+                <small class="inline-block text-RED font-medium translate-y-1"
+                  >Last name cannot be empty</small
+                >
+              </div>
+            </div>
+            <div class="relative mb-6 text-right">
+              <img
+                hidden
+                class="absolute top-1/2 right-4 -translate-y-6"
+                src="./images/icon-error.svg"
+                alt="error icon"
+              />
+              <label for="email" hidden>Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                class="block w-full p-4 rounded-md border border-gray-300 outline-none focus-within:ring-2 ring-ACCENT"
+              />
+              <div hidden>
+                <small class="inline-block text-RED font-medium translate-y-1"
+                  >Looks like this is not an email</small
+                >
+              </div>
+            </div>
+            <div class="relative mb-6 text-right">
+              <img
+                hidden
+                class="absolute top-1/2 right-4 -translate-y-6"
+                src="./images/icon-error.svg"
+                alt="error icon"
+              />
+              <label for="password" hidden>Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                class="block w-full p-4 rounded-md border border-gray-300 outline-none focus-within:ring-2 ring-ACCENT"
+              />
+              <div hidden>
+                <small class="inline-block text-RED font-medium translate-y-1"
+                  >Password cannot be empty</small
+                >
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="w-full p-4 rounded-md outline-none bg-GREEN hover:bg-LIGHTGREEN shadow-md font-medium text-white uppercase transition duration-300 ease-in-out active:translate-y-px"
+            >
+              Claim your free trial
+            </button>
+            <div class="text-center">
+              <small
+                class="inline-block mt-4 font-medium text-[11px] text-NEUTRALLIGHT"
+                >By clicking the button, you are agreeing to our
+                <span class="font-bold text-RED">Terms and Services</span>
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
